@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ronit Patil | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* HEADER */
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(-45deg,#1e3a8a,#2563eb,#38bdf8,#0ea5e9);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+header h1{
+font-size:55px;
+font-weight:700;
+}
+
+/* Typewriter Effect */
+#typewriter {
+  font-size:20px;
+  margin-top:10px;
+  border-right:2px solid #ffd700; /* cursor */
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+/* NAVIGATION */
+
+nav{
+margin-top:25px;
+}
+
+nav a{
+margin:0 12px;
+color:white;
+font-weight:600;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* PROFILE IMAGE */
+
+.profile{
+width:160px;
+height:160px;
+border-radius:50%;
+border:5px solid white;
+margin-bottom:20px;
+object-fit:cover;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+/* TITLES */
+
+h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+/* TEXT */
+
+p{
+font-size:18px;
+line-height:1.8;
+text-align:center;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.skill-name{
+margin-bottom:10px;
+font-weight:600;
+}
+
+.bar{
+height:10px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#38bdf8;
+}
+
+/* CARDS (Projects, Education, Certificates, Gallery) */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+border-radius:20px;
+text-decoration:none;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+@media(max-width:600px){
+header h1{
+font-size:38px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="profile.jpeg" class="profile">
+
+<h1>Ronit Patil</h1>
+
+<!-- Typewriter line -->
+<p id="typewriter">B.Tech Computer Engineering Student | Future Cybersecurity Engineer</p>
+
+<nav>
+<a href="#about">About</a>
+<a href="#career">Career</a>
+<a href="#goals">Goals</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#certificates">Certificates</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container">
+<h2>About Me</h2>
+
+<p>
+Hello! I'm Ronit Patil, a Computer Engineering student at MIT Academy of Engineering, Pune.
+I am passionate about technology, cybersecurity, and software development.
+I enjoy working with C, Python, Linux, HTML and CSS.
+My goal is to build secure and impactful software solutions.
+</p>
+
+<div style="text-align:center;">
+<a href="resume.pdf" class="btn">Download Resume</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- CAREER -->
+
+<section id="career">
+<div class="container">
+<h2>Career Objective & Values</h2>
+<p>
+To become a cybersecurity expert and build secure systems.
+I believe in continuous learning, discipline, and problem-solving.
+</p>
+</div>
+</section>
+
+<!-- GOALS -->
+
+<section id="goals">
+<div class="container">
+<h2>Personal Goals & History</h2>
+<p>
+Currently pursuing B.Tech in Computer Engineering.
+Started with C and Python and developed strong interest in cybersecurity.
+Aim to work on real-world security challenges.
+</p>
+</div>
+</section>
+
+<section id="interests">
+<div class="container">
+
+<!-- SKILLS -->
+
+<section id="skills">
+<div class="container">
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<div class="skill-name">C Programming</div>
+<div class="bar"><span style="width:80%"></span></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="bar"><span style="width:75%"></span></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Linux</div>
+<div class="bar"><span style="width:70%"></span></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">HTML & CSS</div>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CERTIFICATES -->
+
+<section id="certificates">
+<div class="container">
+<h2>Certificates</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>C Certificate</h3>
+<a href="c-certificate.pdf" class="btn">View</a>
+</div>
+
+<div class="project-card">
+<h3>Python Certificate</h3>
+<a href="python-certificate.pdf" class="btn">View</a>
+</div>
+
+<div class="project-card">
+<h3>Linux Certificate</h3>
+<a href="linux-certificate.pdf" class="btn">View</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<h2>Hobbies & Interests</h2>
+
+<div class="projects">
+
+<div class="project-card">♟ Strategic Thinking (Chess)</div>
+
+<div class="project-card">⚽ Team Sports (Football)</div>
+
+<div class="project-card">🏏 Outdoor Sports (Cricket)</div>
+
+<div class="project-card">🏸 Fitness & Sports (Badminton)</div>
+
+<div class="project-card">🎵 Music Enthusiast</div>
+
+<div class="project-card">🎬 Movie & Storytelling Enthusiast</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+<div class="container">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>Responsive portfolio using HTML & CSS.</p>
+</div>
+
+<div class="project-card">
+<h3>Library Management System</h3>
+<p>System to manage books using C/Python.</p>
+<a href="library-management.pdf" class="btn">View Project</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+<div class="container">
+<h2>Education & Training</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>B.Tech Computer Engineering</h3>
+<p>
+<a href="https://mitaoe.ac.in/" target="_blank" style="color:#38bdf8; text-decoration:none;">
+MITAOE Alandi (2025-2029 | Present)
+</a>
+</p>
+</div>
+
+<div class="project-card">
+<h3>12th (Science)</h3>
+<p>Boards - 80% | JEE - 86%tile | CET - 94.84%tile</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+<div class="container">
+<h2>Testimonials</h2>
+<p>
+"My teachers describe me as a hardworking and curious learner with strong problem-solving skills."
+</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<div class="container contact">
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+📧 Email: 
+<a href="mailto:ronitpatill083@gmail.com">
+ronitpatill083@gmail.com
+</a>
+</p>
+
+<p>
+💼 LinkedIn: 
+<a href="https://www.linkedin.com/in/ronit-patil-24b3103a0" target="_blank">
+View Profile
+</a>
+</p>
+
+<p>
+📞 Phone: 
+<a href="tel:+919270694142">
++91 9270694142
+</a>
+</p>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Ronit Patil </p>
+</footer>
+
+<!-- Typewriter Script -->
+<script>
+const text = "B.Tech Computer Engineering Student | Future Cybersecurity Engineer";
+let i = 0;
+document.getElementById("typewriter").innerHTML = ""; // clear initial text
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50); // typing speed
+  }
+}
+
+window.onload = typeWriter;
+</script>
+
+</body>
+</html>
